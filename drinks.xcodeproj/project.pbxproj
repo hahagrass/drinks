@@ -3,10 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23161949240A407E004FA710 /* TeaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23161948240A407E004FA710 /* TeaData.swift */; };
+		234775C9240D27A100293BAA /* firstShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234775C8240D27A100293BAA /* firstShopListTableViewCell.swift */; };
+		234B7632240F3B1000A578E5 /* secondShopOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B7631240F3B1000A578E5 /* secondShopOrderTableViewController.swift */; };
+		234B7634240F3B4600A578E5 /* thirdShopOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B7633240F3B4600A578E5 /* thirdShopOrderTableViewController.swift */; };
+		234EFDD02416794C00DC8988 /* 木子.txt in Resources */ = {isa = PBXBuildFile; fileRef = 234EFDCF2416794C00DC8988 /* 木子.txt */; };
+		234EFDD224167E0F00DC8988 /* orderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EFDD124167E0F00DC8988 /* orderListTableViewController.swift */; };
+		2396B3A924085DFC008CA8DF /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396B3A824085DFC008CA8DF /* LaunchAnimationViewController.swift */; };
+		23B9662624160DA2008F822E /* firstShopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9662524160DA2008F822E /* firstShopListTableViewController.swift */; };
+		23B9662824160F1F008F822E /* secondShopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9662724160F1F008F822E /* secondShopListTableViewController.swift */; };
+		23B9662A241619ED008F822E /* secondShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B96629241619ED008F822E /* secondShopListTableViewCell.swift */; };
+		23B9662C24161EB7008F822E /* thirdShopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9662B24161EB7008F822E /* thirdShopListTableViewController.swift */; };
+		23B9662E24161ECD008F822E /* thirdShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9662D24161ECD008F822E /* thirdShopListTableViewCell.swift */; };
+		23BB3539240A646400C2FD9C /* firstShopOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB3538240A646400C2FD9C /* firstShopOrderTableViewController.swift */; };
+		23BB353F240A8FFD00C2FD9C /* 可不可熟成.txt in Resources */ = {isa = PBXBuildFile; fileRef = 23BB353E240A8FFD00C2FD9C /* 可不可熟成.txt */; };
+		23BB3545240A9A2500C2FD9C /* 丸作.txt in Resources */ = {isa = PBXBuildFile; fileRef = 23BB3544240A9A2500C2FD9C /* 丸作.txt */; };
+		23C386C72408503F000CAD7F /* servishero_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 23C386C62408503F000CAD7F /* servishero_loading.json */; };
 		23DE5A542407A49F005DE7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE5A532407A49F005DE7E8 /* AppDelegate.swift */; };
 		23DE5A562407A49F005DE7E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE5A552407A49F005DE7E8 /* SceneDelegate.swift */; };
 		23DE5A582407A49F005DE7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE5A572407A49F005DE7E8 /* ViewController.swift */; };
@@ -15,6 +31,9 @@
 		23DE5A602407A4A1005DE7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DE5A5E2407A4A1005DE7E8 /* LaunchScreen.storyboard */; };
 		23DE5A6B2407A4A1005DE7E8 /* drinksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE5A6A2407A4A1005DE7E8 /* drinksTests.swift */; };
 		23DE5A762407A4A1005DE7E8 /* drinksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE5A752407A4A1005DE7E8 /* drinksUITests.swift */; };
+		34BB90A4123BEC5AC0416F61 /* Pods_drinksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEACE2DDA6D0FEF5021D152A /* Pods_drinksTests.framework */; };
+		64781CD8673D6781E3AD3DA0 /* Pods_drinks_drinksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C1E1925CB9C1C3C2BEF117 /* Pods_drinks_drinksUITests.framework */; };
+		8AB44CD476FBA9C2FDF46D38 /* Pods_drinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB5D36D821200C5CF5BF31F /* Pods_drinks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +54,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23161948240A407E004FA710 /* TeaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaData.swift; sourceTree = "<group>"; };
+		234775C8240D27A100293BAA /* firstShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstShopListTableViewCell.swift; sourceTree = "<group>"; };
+		234B7631240F3B1000A578E5 /* secondShopOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondShopOrderTableViewController.swift; sourceTree = "<group>"; };
+		234B7633240F3B4600A578E5 /* thirdShopOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdShopOrderTableViewController.swift; sourceTree = "<group>"; };
+		234EFDCF2416794C00DC8988 /* 木子.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "木子.txt"; sourceTree = "<group>"; };
+		234EFDD124167E0F00DC8988 /* orderListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderListTableViewController.swift; sourceTree = "<group>"; };
+		2396B3A824085DFC008CA8DF /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
+		23B9662524160DA2008F822E /* firstShopListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstShopListTableViewController.swift; sourceTree = "<group>"; };
+		23B9662724160F1F008F822E /* secondShopListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondShopListTableViewController.swift; sourceTree = "<group>"; };
+		23B96629241619ED008F822E /* secondShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondShopListTableViewCell.swift; sourceTree = "<group>"; };
+		23B9662B24161EB7008F822E /* thirdShopListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdShopListTableViewController.swift; sourceTree = "<group>"; };
+		23B9662D24161ECD008F822E /* thirdShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdShopListTableViewCell.swift; sourceTree = "<group>"; };
+		23BB3538240A646400C2FD9C /* firstShopOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstShopOrderTableViewController.swift; sourceTree = "<group>"; };
+		23BB353E240A8FFD00C2FD9C /* 可不可熟成.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "可不可熟成.txt"; sourceTree = "<group>"; };
+		23BB3544240A9A2500C2FD9C /* 丸作.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "丸作.txt"; sourceTree = "<group>"; };
+		23C386C62408503F000CAD7F /* servishero_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = servishero_loading.json; path = ../../../Downloads/servishero_loading.json; sourceTree = "<group>"; };
 		23DE5A502407A49F005DE7E8 /* drinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DE5A532407A49F005DE7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23DE5A552407A49F005DE7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +84,15 @@
 		23DE5A712407A4A1005DE7E8 /* drinksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drinksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DE5A752407A4A1005DE7E8 /* drinksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinksUITests.swift; sourceTree = "<group>"; };
 		23DE5A772407A4A1005DE7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2927DEE0DE7E4B5484C62193 /* Pods-drinks-drinksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drinks-drinksUITests.debug.xcconfig"; path = "Target Support Files/Pods-drinks-drinksUITests/Pods-drinks-drinksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		33C1E1925CB9C1C3C2BEF117 /* Pods_drinks_drinksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_drinks_drinksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB5D36D821200C5CF5BF31F /* Pods_drinks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_drinks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5577CB75F240696D0BABACD0 /* Pods-drinks-drinksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drinks-drinksUITests.release.xcconfig"; path = "Target Support Files/Pods-drinks-drinksUITests/Pods-drinks-drinksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63244B3279BD2284394E0146 /* Pods-drinksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drinksTests.release.xcconfig"; path = "Target Support Files/Pods-drinksTests/Pods-drinksTests.release.xcconfig"; sourceTree = "<group>"; };
+		763852236E7CCAB9B5FD0649 /* Pods-drinksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drinksTests.debug.xcconfig"; path = "Target Support Files/Pods-drinksTests/Pods-drinksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9971B5F5350420174D33AD72 /* Pods-drinks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drinks.debug.xcconfig"; path = "Target Support Files/Pods-drinks/Pods-drinks.debug.xcconfig"; sourceTree = "<group>"; };
+		CEACE2DDA6D0FEF5021D152A /* Pods_drinksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_drinksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3FF8A63FB2053164447E0C3 /* Pods-drinks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drinks.release.xcconfig"; path = "Target Support Files/Pods-drinks/Pods-drinks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB44CD476FBA9C2FDF46D38 /* Pods_drinks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BB90A4123BEC5AC0416F61 /* Pods_drinksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +116,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64781CD8673D6781E3AD3DA0 /* Pods_drinks_drinksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09B6874364C8EF43F435D5F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB5D36D821200C5CF5BF31F /* Pods_drinks.framework */,
+				33C1E1925CB9C1C3C2BEF117 /* Pods_drinks_drinksUITests.framework */,
+				CEACE2DDA6D0FEF5021D152A /* Pods_drinksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		180C6779EDFF7AB157E3540B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9971B5F5350420174D33AD72 /* Pods-drinks.debug.xcconfig */,
+				D3FF8A63FB2053164447E0C3 /* Pods-drinks.release.xcconfig */,
+				2927DEE0DE7E4B5484C62193 /* Pods-drinks-drinksUITests.debug.xcconfig */,
+				5577CB75F240696D0BABACD0 /* Pods-drinks-drinksUITests.release.xcconfig */,
+				763852236E7CCAB9B5FD0649 /* Pods-drinksTests.debug.xcconfig */,
+				63244B3279BD2284394E0146 /* Pods-drinksTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		23DE5A472407A49F005DE7E8 = {
 			isa = PBXGroup;
 			children = (
+				23DE5A842407A7AA005DE7E8 /* Model */,
+				23DE5A862407A801005DE7E8 /* View */,
+				23DE5A852407A7F3005DE7E8 /* Controller */,
 				23DE5A522407A49F005DE7E8 /* drinks */,
 				23DE5A692407A4A1005DE7E8 /* drinksTests */,
 				23DE5A742407A4A1005DE7E8 /* drinksUITests */,
 				23DE5A512407A49F005DE7E8 /* Products */,
+				180C6779EDFF7AB157E3540B /* Pods */,
+				09B6874364C8EF43F435D5F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +174,9 @@
 		23DE5A522407A49F005DE7E8 /* drinks */ = {
 			isa = PBXGroup;
 			children = (
-				23DE5A532407A49F005DE7E8 /* AppDelegate.swift */,
-				23DE5A552407A49F005DE7E8 /* SceneDelegate.swift */,
-				23DE5A572407A49F005DE7E8 /* ViewController.swift */,
-				23DE5A592407A49F005DE7E8 /* Main.storyboard */,
-				23DE5A5C2407A4A1005DE7E8 /* Assets.xcassets */,
+				234EFDCF2416794C00DC8988 /* 木子.txt */,
+				23BB3544240A9A2500C2FD9C /* 丸作.txt */,
+				23BB353E240A8FFD00C2FD9C /* 可不可熟成.txt */,
 				23DE5A5E2407A4A1005DE7E8 /* LaunchScreen.storyboard */,
 				23DE5A612407A4A1005DE7E8 /* Info.plist */,
 			);
@@ -128,6 +201,45 @@
 			path = drinksUITests;
 			sourceTree = "<group>";
 		};
+		23DE5A842407A7AA005DE7E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23161948240A407E004FA710 /* TeaData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DE5A852407A7F3005DE7E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DE5A532407A49F005DE7E8 /* AppDelegate.swift */,
+				23DE5A552407A49F005DE7E8 /* SceneDelegate.swift */,
+				23DE5A572407A49F005DE7E8 /* ViewController.swift */,
+				23BB3538240A646400C2FD9C /* firstShopOrderTableViewController.swift */,
+				23B9662524160DA2008F822E /* firstShopListTableViewController.swift */,
+				234775C8240D27A100293BAA /* firstShopListTableViewCell.swift */,
+				234B7631240F3B1000A578E5 /* secondShopOrderTableViewController.swift */,
+				23B9662724160F1F008F822E /* secondShopListTableViewController.swift */,
+				23B96629241619ED008F822E /* secondShopListTableViewCell.swift */,
+				234B7633240F3B4600A578E5 /* thirdShopOrderTableViewController.swift */,
+				23B9662B24161EB7008F822E /* thirdShopListTableViewController.swift */,
+				23B9662D24161ECD008F822E /* thirdShopListTableViewCell.swift */,
+				234EFDD124167E0F00DC8988 /* orderListTableViewController.swift */,
+				2396B3A824085DFC008CA8DF /* LaunchAnimationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DE5A862407A801005DE7E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23DE5A592407A49F005DE7E8 /* Main.storyboard */,
+				23DE5A5C2407A4A1005DE7E8 /* Assets.xcassets */,
+				23C386C62408503F000CAD7F /* servishero_loading.json */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DE5A7A2407A4A1005DE7E8 /* Build configuration list for PBXNativeTarget "drinks" */;
 			buildPhases = (
+				9BFFA8D30493261E3EAD3BCC /* [CP] Check Pods Manifest.lock */,
 				23DE5A4C2407A49F005DE7E8 /* Sources */,
 				23DE5A4D2407A49F005DE7E8 /* Frameworks */,
 				23DE5A4E2407A49F005DE7E8 /* Resources */,
+				F8120823EFDC01F831192906 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DE5A7D2407A4A1005DE7E8 /* Build configuration list for PBXNativeTarget "drinksTests" */;
 			buildPhases = (
+				9AA80C9C57CE19EACFFAA8B7 /* [CP] Check Pods Manifest.lock */,
 				23DE5A622407A4A1005DE7E8 /* Sources */,
 				23DE5A632407A4A1005DE7E8 /* Frameworks */,
 				23DE5A642407A4A1005DE7E8 /* Resources */,
@@ -170,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DE5A802407A4A1005DE7E8 /* Build configuration list for PBXNativeTarget "drinksUITests" */;
 			buildPhases = (
+				B9EBEF8B74717D084A894086 /* [CP] Check Pods Manifest.lock */,
 				23DE5A6D2407A4A1005DE7E8 /* Sources */,
 				23DE5A6E2407A4A1005DE7E8 /* Frameworks */,
 				23DE5A6F2407A4A1005DE7E8 /* Resources */,
+				6777AF8403302F9A0F66C351 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +349,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234EFDD02416794C00DC8988 /* 木子.txt in Resources */,
+				23BB3545240A9A2500C2FD9C /* 丸作.txt in Resources */,
 				23DE5A602407A4A1005DE7E8 /* LaunchScreen.storyboard in Resources */,
 				23DE5A5D2407A4A1005DE7E8 /* Assets.xcassets in Resources */,
+				23C386C72408503F000CAD7F /* servishero_loading.json in Resources */,
+				23BB353F240A8FFD00C2FD9C /* 可不可熟成.txt in Resources */,
 				23DE5A5B2407A49F005DE7E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +375,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6777AF8403302F9A0F66C351 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-drinks-drinksUITests/Pods-drinks-drinksUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-drinks-drinksUITests/Pods-drinks-drinksUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-drinks-drinksUITests/Pods-drinks-drinksUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA80C9C57CE19EACFFAA8B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drinksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BFFA8D30493261E3EAD3BCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drinks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9EBEF8B74717D084A894086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drinks-drinksUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8120823EFDC01F831192906 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-drinks/Pods-drinks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-drinks/Pods-drinks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-drinks/Pods-drinks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23DE5A4C2407A49F005DE7E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B9662C24161EB7008F822E /* thirdShopListTableViewController.swift in Sources */,
+				234775C9240D27A100293BAA /* firstShopListTableViewCell.swift in Sources */,
+				23B9662624160DA2008F822E /* firstShopListTableViewController.swift in Sources */,
+				23BB3539240A646400C2FD9C /* firstShopOrderTableViewController.swift in Sources */,
+				234B7634240F3B4600A578E5 /* thirdShopOrderTableViewController.swift in Sources */,
+				2396B3A924085DFC008CA8DF /* LaunchAnimationViewController.swift in Sources */,
+				23B9662A241619ED008F822E /* secondShopListTableViewCell.swift in Sources */,
+				234EFDD224167E0F00DC8988 /* orderListTableViewController.swift in Sources */,
 				23DE5A582407A49F005DE7E8 /* ViewController.swift in Sources */,
+				23B9662824160F1F008F822E /* secondShopListTableViewController.swift in Sources */,
 				23DE5A542407A49F005DE7E8 /* AppDelegate.swift in Sources */,
+				234B7632240F3B1000A578E5 /* secondShopOrderTableViewController.swift in Sources */,
+				23161949240A407E004FA710 /* TeaData.swift in Sources */,
+				23B9662E24161ECD008F822E /* thirdShopListTableViewCell.swift in Sources */,
 				23DE5A562407A49F005DE7E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +668,7 @@
 		};
 		23DE5A7B2407A4A1005DE7E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9971B5F5350420174D33AD72 /* Pods-drinks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +686,7 @@
 		};
 		23DE5A7C2407A4A1005DE7E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FF8A63FB2053164447E0C3 /* Pods-drinks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +704,7 @@
 		};
 		23DE5A7E2407A4A1005DE7E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763852236E7CCAB9B5FD0649 /* Pods-drinksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +726,7 @@
 		};
 		23DE5A7F2407A4A1005DE7E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63244B3279BD2284394E0146 /* Pods-drinksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +748,7 @@
 		};
 		23DE5A812407A4A1005DE7E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2927DEE0DE7E4B5484C62193 /* Pods-drinks-drinksUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +768,7 @@
 		};
 		23DE5A822407A4A1005DE7E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5577CB75F240696D0BABACD0 /* Pods-drinks-drinksUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

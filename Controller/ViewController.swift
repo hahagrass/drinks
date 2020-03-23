@@ -4,7 +4,7 @@
 //
 //  Created by Eddy Chen on 2020/2/27.
 //  Copyright © 2020 Eddy Chen. All rights reserved.
-//
+//  firstShop跟secondSop都有完整功能,第三間店SheetDB超額所以沒建立sheetDB
 
 import UIKit
 import Lottie

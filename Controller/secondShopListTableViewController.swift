@@ -85,6 +85,18 @@ class secondShopListTableViewController: UITableViewController {
             return cell
             
         }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete{
+            let drinks = secondListArray[indexPath.row]
+            deleteOrderList(secondListArray: drinks) // 呼叫刪除sheetDB裡資料的function
+            secondListArray.remove(at: indexPath.row) // 移除陣列裡的資料
+            tableView.deleteRows(at: [indexPath], with: .automatic) // 刪除這個row
+            tableView.reloadData() // 重新載入tableView
+            updatePriceUI() // 更新總金額
+            updateOrderUI() // 更新總杯數
+        }
+    }
             
         
         
@@ -123,7 +135,35 @@ class secondShopListTableViewController: UITableViewController {
                 task.resume() //開始在背景下載資料
         
             }
-
+    
+    //刪除sheetDB訂單資料
+    //這邊用訂購人的名字做為條件,若符合條件就會刪掉該筆資料,若有多筆資料符合,就會刪掉多筆資料
+    func deleteOrderList(secondListArray:secondDrinksInformation) {
+        if let urlStr = "https://sheetdb.io/api/v1/yd96p3fdq9f90/orderer/\(secondListArray.orderer)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let url = URL(string: urlStr){
+            var urlRequest = URLRequest(url: url)
+            urlRequest.httpMethod = "DELETE"
+            urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            let List = OrderSecond(drinksdataSecond: secondListArray)
+            let jsonEncoder = JSONEncoder()
+            print(List)
+            if let data = try? jsonEncoder.encode(List){
+                let task = URLSession.shared.uploadTask(with: urlRequest, from: data){(retData,response, error)in
+                    let decoder = JSONDecoder()
+                    if let retData = retData , let dic = try? decoder.decode([String:Int].self, from:retData),dic["deleted"] == 1{
+                        print("Successfully deleted")
+                    }else{
+                        print("Failed to delete")
+                    }
+                }
+                task.resume()
+            }else{
+                print("Delete")
+            }
+        }
+    }
+    
+    
         
     }
 

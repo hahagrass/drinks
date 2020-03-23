@@ -160,3 +160,7 @@ struct Order:Encodable {
     var drinksdata:DrinksInformation
 }
 
+struct OrderSecond:Encodable {
+    var drinksdataSecond:secondDrinksInformation
+}
+

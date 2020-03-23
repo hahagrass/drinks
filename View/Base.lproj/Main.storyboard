@@ -7,30 +7,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Wf2-sg-DFi">
             <objects>
-                <viewController id="mYp-ji-DaQ" customClass="ViewController" customModule="drinks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mYp-ji-DaQ" customClass="mapViewController" customModule="drinks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iJn-Uw-ECu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vbj-h8-nKd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="丸作食茶-台北內湖店" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Tk-0Zi">
+                                <rect key="frame" x="20" y="720" width="306" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xCx-BX-xlZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="624"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mYp-ji-DaQ" id="tiV-QM-rPT"/>
+                                </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzq-ng-vFJ">
+                                <rect key="frame" x="334" y="733" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="phone"/>
+                                <connections>
+                                    <action selector="phoneButton:" destination="mYp-ji-DaQ" eventType="touchUpInside" id="W4F-00-8KI"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QiJ-tO-qnC"/>
                     </view>
                     <navigationItem key="navigationItem" id="nRL-zc-xFL"/>
                     <connections>
-                        <outlet property="map" destination="Vbj-h8-nKd" id="2xS-jd-NN6"/>
+                        <outlet property="map" destination="xCx-BX-xlZ" id="aRW-vQ-kOg"/>
+                        <outlet property="shopTitleLabel" destination="0Oz-Tk-0Zi" id="rvM-qO-upY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cp5-Bv-Etn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="138"/>
+            <point key="canvasLocation" x="2744.9275362318845" y="124.55357142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -52,6 +71,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HW-KC-cnv">
+                                                        <rect key="frame" x="327" y="110" width="70" height="70"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button" image="map"/>
+                                                        <connections>
+                                                            <segue destination="mYp-ji-DaQ" kind="show" identifier="firstMap" id="l7g-7c-4p7"/>
+                                                        </connections>
+                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="丸作logo" translatesAutoresizingMaskIntoConstraints="NO" id="fWu-CD-teg">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -99,15 +126,6 @@
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44g-SS-0Gf">
-                                                        <rect key="frame" x="346" y="124" width="60" height="60"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" image="map"/>
-                                                        <connections>
-                                                            <action selector="firstMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ZG-jc-8Gv"/>
-                                                            <segue destination="mYp-ji-DaQ" kind="show" id="cuu-Ob-iS7"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
@@ -123,6 +141,14 @@
                                                         <rect key="frame" x="0.0" y="192" width="414" height="329"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-WM-mbM">
+                                                        <rect key="frame" x="327" y="110" width="70" height="70"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="map"/>
+                                                        <connections>
+                                                            <segue destination="mYp-ji-DaQ" kind="show" identifier="secondMap" id="KQG-cE-dRK"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjP-IB-dZH">
                                                         <rect key="frame" x="70" y="542" width="275" height="69"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,14 +163,6 @@
                                                         <state key="normal" image="orderButton4"/>
                                                         <connections>
                                                             <segue destination="8G2-Eo-BEN" kind="show" id="963-15-9fL"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRL-0r-H23">
-                                                        <rect key="frame" x="346" y="126" width="60" height="60"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" image="map"/>
-                                                        <connections>
-                                                            <action selector="secondMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcN-zx-QOd"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-Jx-di1">
@@ -185,6 +203,14 @@
                                                         <rect key="frame" x="0.0" y="191" width="414" height="331"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uaa-ML-FC8">
+                                                        <rect key="frame" x="347" y="120" width="60" height="60"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="map"/>
+                                                        <connections>
+                                                            <segue destination="mYp-ji-DaQ" kind="show" identifier="thirdMap" id="bsi-E6-D5b"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ew-65-wFo">
                                                         <rect key="frame" x="54" y="563" width="125" height="120"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -203,14 +229,6 @@
                                                         <state key="normal" image="orderButton5"/>
                                                         <connections>
                                                             <action selector="openMenuButton3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P24-af-ONw"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUk-sl-Ut4">
-                                                        <rect key="frame" x="346" y="123" width="60" height="60"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" image="map"/>
-                                                        <connections>
-                                                            <action selector="thirdMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Udv-vt-4IS"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hr0-ar-Uhf">
@@ -258,9 +276,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fch-mt-tlO"/>
                     <connections>
-                        <outlet property="shopMenu1" destination="BjV-oC-EfR" id="mnK-Y0-tsk"/>
-                        <outlet property="shopMenu2" destination="iZo-Jx-di1" id="MWt-49-ELv"/>
-                        <outlet property="shopMenu3" destination="hr0-ar-Uhf" id="zmM-Wt-bib"/>
+                        <outlet property="shopMenu1" destination="BjV-oC-EfR" id="E3Y-1p-wkO"/>
+                        <outlet property="shopMenu2" destination="iZo-Jx-di1" id="BsG-dj-c7U"/>
+                        <outlet property="shopMenu3" destination="hr0-ar-Uhf" id="fc2-rL-G2c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1195,7 +1213,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="sectionIndexBackgroundColor" red="0.11288968470000001" green="0.24141886830000001" blue="0.3098137379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="DYY-j0-SGT">
-                            <rect key="frame" x="0.0" y="1126.5" width="414" height="73"/>
+                            <rect key="frame" x="0.0" y="1168.5" width="414" height="73"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8Q-QM-x6e">
@@ -1848,6 +1866,7 @@
         <image name="orderButton4" width="798" height="200"/>
         <image name="orderButton5" width="208" height="200"/>
         <image name="orderButton6" width="213" height="200"/>
+        <image name="phone" width="512" height="512"/>
         <image name="丸作logo" width="290" height="87"/>
         <image name="丸作menu" width="595" height="842"/>
         <image name="丸作order" width="200" height="200"/>
@@ -1862,4 +1881,7 @@
         <image name="木子飲料群" width="550" height="440"/>
         <image name="燕子" width="376" height="238"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bsi-E6-D5b"/>
+    </inferredMetricsTieBreakers>
 </document>

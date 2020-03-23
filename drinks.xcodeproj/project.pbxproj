@@ -13,6 +13,7 @@
 		234B7634240F3B4600A578E5 /* thirdShopOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B7633240F3B4600A578E5 /* thirdShopOrderTableViewController.swift */; };
 		234EFDD02416794C00DC8988 /* 木子.txt in Resources */ = {isa = PBXBuildFile; fileRef = 234EFDCF2416794C00DC8988 /* 木子.txt */; };
 		234EFDD224167E0F00DC8988 /* orderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EFDD124167E0F00DC8988 /* orderListTableViewController.swift */; };
+		23900C1F2425F82A008E3092 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23900C1E2425F82A008E3092 /* mapViewController.swift */; };
 		2396B3A924085DFC008CA8DF /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396B3A824085DFC008CA8DF /* LaunchAnimationViewController.swift */; };
 		23B9662624160DA2008F822E /* firstShopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9662524160DA2008F822E /* firstShopListTableViewController.swift */; };
 		23B9662824160F1F008F822E /* secondShopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9662724160F1F008F822E /* secondShopListTableViewController.swift */; };
@@ -60,6 +61,7 @@
 		234B7633240F3B4600A578E5 /* thirdShopOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdShopOrderTableViewController.swift; sourceTree = "<group>"; };
 		234EFDCF2416794C00DC8988 /* 木子.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "木子.txt"; sourceTree = "<group>"; };
 		234EFDD124167E0F00DC8988 /* orderListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderListTableViewController.swift; sourceTree = "<group>"; };
+		23900C1E2425F82A008E3092 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		2396B3A824085DFC008CA8DF /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
 		23B9662524160DA2008F822E /* firstShopListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstShopListTableViewController.swift; sourceTree = "<group>"; };
 		23B9662724160F1F008F822E /* secondShopListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondShopListTableViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				23DE5A532407A49F005DE7E8 /* AppDelegate.swift */,
 				23DE5A552407A49F005DE7E8 /* SceneDelegate.swift */,
 				23DE5A572407A49F005DE7E8 /* ViewController.swift */,
+				23900C1E2425F82A008E3092 /* mapViewController.swift */,
 				23BB3538240A646400C2FD9C /* firstShopOrderTableViewController.swift */,
 				23B9662524160DA2008F822E /* firstShopListTableViewController.swift */,
 				234775C8240D27A100293BAA /* firstShopListTableViewCell.swift */,
@@ -498,6 +501,7 @@
 				23161949240A407E004FA710 /* TeaData.swift in Sources */,
 				23B9662E24161ECD008F822E /* thirdShopListTableViewCell.swift in Sources */,
 				23DE5A562407A49F005DE7E8 /* SceneDelegate.swift in Sources */,
+				23900C1F2425F82A008E3092 /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
